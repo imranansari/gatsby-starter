@@ -12,6 +12,14 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Source Code Pro', 'monospace']
+        }
+      }
+    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
