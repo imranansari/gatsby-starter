@@ -26,7 +26,7 @@ const Articles = () => {
 	        <div className="column-main-container-large column-with-links">
 						{ data.allMarkdownRemark.edges.map((edge) => {
 							return(
-								<Link to="blog" className="link link-preview">
+								<Link to="" className="link link-preview">
 									{ edge.node.frontmatter.title }
 								</Link>
 							)
