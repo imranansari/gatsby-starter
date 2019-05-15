@@ -73,6 +73,10 @@ section {
   margin-bottom: 40px;
 }
 
+.post-content {
+  margin-top: 100px;
+}
+
 
 /*
   -------------------------
@@ -181,28 +185,6 @@ a:hover::after {
 .last-link-without-margin {
   margin-right: 0;
 }
-
-/* .link-download {
-    background: transparent url('../assets/arrow-down.svg')
-                no-repeat right center;
-    background-size: 26px;
-    padding: 0px 55px 15px 0px;
-  }
-  
-  .link-preview {
-    background: transparent url('../assets/arrow-up.svg')
-                no-repeat right center;
-    background-size: 26px;
-    padding: 0px 55px 5px 0px;
-    margin-bottom: 10px;
-  }
-  
-  .link-wip-folio {
-    background: transparent url('../assets/arrow-up.svg')
-                no-repeat right center;
-    background-size: 26px;
-    padding: 0px 55px 5px 0px;
-  } */
 
 .link-download::after,
 .link-preview::after,
