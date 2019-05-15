@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby'; 
 
 const Articles = () => {
-	
+
 	const data = useStaticQuery(graphql`
 		query {
   		allMarkdownRemark {
@@ -11,8 +11,6 @@ const Articles = () => {
         		frontmatter {
           		title
         		}
-        		html
-        		excerpt
       		}
     		}
   		}
@@ -26,17 +24,13 @@ const Articles = () => {
 	    </div>
 	    <div className="column-main">
 	        <div className="column-main-container-large column-with-links">
-	        	<Link to="/blog" className="link link-preview">
-	        		Gatsby is super dope!
-	        	</Link>
-                <br className="link-line-break" />
-	        	<Link to="/blog" className="link link-preview">
-	        		React vs Vue
-	        	</Link>
-                <br className="link-line-break" />
-	        	<Link to="/blog" className="link link-preview">
-	        		How I came to be this way.
-	        	</Link>
+						{ data.allMarkdownRemark.edges.map((edge) => {
+							return(
+								<Link to="blog" className="link link-preview">
+									{ edge.node.frontmatter.title }
+								</Link>
+							)
+						})}
 	        </div>
 	    </div>
 	</section>
