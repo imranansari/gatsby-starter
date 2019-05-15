@@ -6,7 +6,7 @@ const Footer = () => {
     <section className="footer">
 	    <div className="column-left"></div>
 	    <div className="column-main">
-	        <h3>All Rights Reserved. 2019.</h3>
+	        <h3>© Copyright 2019 - Created By James Bedford</h3>
 	    </div>
 	</section>
   )
