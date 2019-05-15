@@ -9,7 +9,7 @@ body {
   margin-left: 60px;
   margin-top: 20px;
 
-  font-family: 'Space Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -75,6 +75,7 @@ section {
 
 .post-content {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
