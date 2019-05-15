@@ -9,7 +9,10 @@ const Articles = () => {
     		edges {
       		node {
         		frontmatter {
-          		title
+          		title 
+        		}
+        		fields {
+          		slug
         		}
       		}
     		}
@@ -26,7 +29,7 @@ const Articles = () => {
 	        <div className="column-main-container-large column-with-links">
 						{ data.allMarkdownRemark.edges.map((edge) => {
 							return(
-								<Link to="" className="link link-preview">
+								<Link to={`/blog/${ edge.node.fields.slug }`} className="link link-preview">
 									{ edge.node.frontmatter.title }
 								</Link>
 							)
