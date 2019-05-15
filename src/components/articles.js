@@ -1,7 +1,24 @@
 import React from 'react';
-import { Link } from 'gatsby'; 
+import { Link, graphql, useStaticQuery } from 'gatsby'; 
 
 const Articles = () => {
+	
+	const data = useStaticQuery(graphql`
+		query {
+  		allMarkdownRemark {
+    		edges {
+      		node {
+        		frontmatter {
+          		title
+        		}
+        		html
+        		excerpt
+      		}
+    		}
+  		}
+		}
+	`);
+
   return (
     <section>
 	    <div className="column-left">
